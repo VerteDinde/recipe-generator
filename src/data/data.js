@@ -1,6 +1,7 @@
 const recipes = [{
   name: 'Broccoli Chevre Soup',
   recipeID: 'broccoli-soup',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
   ingredients: [
     'unsalted butter',
     'yellow onion',
@@ -18,6 +19,7 @@ const recipes = [{
 {
   name: 'Superhero Muffins',
   recipeID: 'superhero-muffins',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
   ingredients: [
     'almond meal',
     'rolled oats',
@@ -39,6 +41,7 @@ const recipes = [{
 {
   name: 'Sausage Minestrone',
   recipeID: 'sausage-minestrone',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
   ingredients: [
     '1 lb spicy Italian sausage',
     '3 ribs celery',
@@ -59,6 +62,7 @@ const recipes = [{
 {
   name: 'Veggie Fried Rice',
   recipeID: 'veggie-rice',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
   ingreidents: [
     'Saffron oil',
     '2 cloves garlic',
@@ -75,6 +79,7 @@ const recipes = [{
 {
   name: 'Sweet and Sour Chicken',
   recipeID: 'sweet-sour-chicken',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
   ingredients: [
     'Chicken thighs',
     '15 oz canned pineapple',
@@ -88,6 +93,7 @@ const recipes = [{
 {
   name: 'Creamy Italian Sausage Soup',
   recipeID: 'creamy-sausage-soup',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
   ingredients: [
     'mild Italian sausage',
     'red pepper flakes',
@@ -103,5 +109,13 @@ const recipes = [{
 }];
 
 export default {
-  get() { return Promise.resolve(recipes.slice()); }
+  get() { return Promise.resolve(recipes); },
+
+  addRecipe(recipe) {
+    const saved = {
+      ...recipe,
+    };
+    return Promise.resolve(saved);
+  }
+
 };
