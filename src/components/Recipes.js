@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Recipe from './Recipe';
 
-export default function Recipes({ recipes }) {
-  return (
-    <div>
-      <h2>Recipes</h2>
-      <p>Below are the selection of recipes available:</p>
-      <ul>
-        {recipes.map((recipe, i) => <Recipe
-          key={i}
-          {...recipe}
-        />)}
-      </ul>
-    </div>
-  );
+export default class Recipes extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { recipes } = this.props;
+    return (
+      <div>
+        <h2>Recipes</h2>
+        <p>Below are the selection of recipes available:</p>
+        <ul>
+          {recipes.map((recipe, i) => <Recipe
+            key={i}
+            {...recipe}
+            onAdd={() => this.props.onAdd(recipe)}
+          />)}
+        </ul>
+      </div>
+    );
+  }
 }

@@ -10,8 +10,11 @@ export default class App extends Component {
     super();
 
     this.state = {
-      recipes: null
+      recipes: null,
+      shoppingList: []
     };
+
+    this.addToShoppingList = this.addToShoppingList.bind(this);
   }
 
   componentDidMount() {
@@ -19,8 +22,13 @@ export default class App extends Component {
       .then(recipes => this.setState({ recipes }));
   }
 
+  addToShoppingList(recipe) {
+    let list = recipe.ingredients.concat(this.state.shoppingList);
+    this.setState({ shoppingList: list });
+  }
+
   render() {
-    const { recipes } = this.state;
+    const { recipes, shoppingList } = this.state;
     return (
       <div className="App">
         <div className="App-header">
@@ -30,8 +38,8 @@ export default class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        {/*{recipes && <GroceryList ingredients={recipes.ingredients} />}*/}
-        {recipes && <Recipes recipes={recipes} />}
+        {recipes && <GroceryList shoppingList={shoppingList} onAdd={this.addToShoppingList} />}
+        {recipes && <Recipes recipes={recipes} onAdd={this.addToShoppingList} />}
       </div>
     );
   }

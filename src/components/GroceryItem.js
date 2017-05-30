@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class GroceryItem extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { ingredients } = this.props;
-    return (
-      <div></div>
-    );
-  }
+export default function GroceryItem({ ingredient }) {
+  return(
+    <li>
+      {ingredient}
+    </li>
+  );
 }

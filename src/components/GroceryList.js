@@ -7,13 +7,17 @@ export default class GroceryList extends Component {
   }
 
   render() {
-    const { ingredients } = this.props.recipes;
+    const { shoppingList } = this.props;
     return (
-      <div>
+      <ul>
         <h2>Grocery List</h2>
         <p>Click the recipes above to add ingredients to your grocery list. You can check these items off as you shop.</p>
-        <GroceryItem ingredients={ingredients} />
-      </div>
+        {shoppingList &&
+          shoppingList.map((ingredient, i) => <GroceryItem
+            key={i}
+            ingredient={ingredient}
+          />)}
+      </ul>
     );
   }
 }

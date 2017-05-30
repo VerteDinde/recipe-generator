@@ -73,7 +73,7 @@ const recipes = [{
   name: 'Veggie Fried Rice',
   recipeID: 'veggie-rice',
   imgUrl: veggieFriedRiceImg,
-  ingreidents: [
+  ingredients: [
     'Saffron oil',
     '2 cloves garlic',
     'ginger',
