@@ -13,7 +13,9 @@ const recipes = [{
     '1 bay leaf',
     'black pepper',
     'tahini',
-    '4 oz chevre'],
+    '4 oz chevre'
+  ],
+  description: 'null',
   quantity: 1
 },
 {
@@ -36,6 +38,7 @@ const recipes = [{
     'maple syrup',
     'vanilla extract'
   ],
+  description: 'null',
   quantity: 1
 },
 {
@@ -57,6 +60,7 @@ const recipes = [{
     '3 cups penne',
     'Parmesan'
   ],
+  description: 'null',
   quantity: 1
 },
 {
@@ -74,6 +78,7 @@ const recipes = [{
     'soy sauce',
     '2 eggs',
   ],
+  description: 'null',
   quantity: 1
 },
 {
@@ -88,6 +93,7 @@ const recipes = [{
     'green onions',
     'Sweet/sour sauce',
   ],
+  description: 'null',
   quantity: 1,
 },
 {
@@ -105,6 +111,7 @@ const recipes = [{
     'heavy cream',
     'fresh kale'
   ],
+  description: 'null',
   quantity: 1,
 }];
 
