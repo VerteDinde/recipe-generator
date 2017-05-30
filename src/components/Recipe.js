@@ -6,8 +6,8 @@ export default function Recipe({ name, ingredients, imgUrl }) {
     <div className="thumbnail">
       <img src={imgUrl} alt={'name'} />
       <h2>{name}</h2>
-      <button>Add to Grocery List</button>
-      <button>See Recipe</button>
+      <button className="button">Add to Grocery List</button>
+      <button className="button">See Recipe</button>
     </div>
   );
 }

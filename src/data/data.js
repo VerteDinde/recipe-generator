@@ -1,7 +1,13 @@
+import broccoliChevreImg from '../img/broccoli-chevre-soup.jpg';
+import superheroMuffinImg from '../img/superhero-muffins.jpg';
+import sausageMinestroneImg from '../img/sausage-minestrone.jpg';
+import veggieFriedRiceImg from '../img/veg-fried-rice.jpg';
+import sweetSourImg from '../img/sweet-and-sour-chicken.jpg';
+
 const recipes = [{
   name: 'Broccoli Chevre Soup',
   recipeID: 'broccoli-soup',
-  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  imgUrl: broccoliChevreImg,
   ingredients: [
     'unsalted butter',
     'yellow onion',
@@ -21,7 +27,7 @@ const recipes = [{
 {
   name: 'Superhero Muffins',
   recipeID: 'superhero-muffins',
-  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  imgUrl: superheroMuffinImg,
   ingredients: [
     'almond meal',
     'rolled oats',
@@ -44,7 +50,7 @@ const recipes = [{
 {
   name: 'Sausage Minestrone',
   recipeID: 'sausage-minestrone',
-  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  imgUrl: sausageMinestroneImg,
   ingredients: [
     '1 lb spicy Italian sausage',
     '3 ribs celery',
@@ -66,7 +72,7 @@ const recipes = [{
 {
   name: 'Veggie Fried Rice',
   recipeID: 'veggie-rice',
-  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  imgUrl: veggieFriedRiceImg,
   ingreidents: [
     'Saffron oil',
     '2 cloves garlic',
@@ -84,7 +90,7 @@ const recipes = [{
 {
   name: 'Sweet and Sour Chicken',
   recipeID: 'sweet-sour-chicken',
-  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  imgUrl: sweetSourImg,
   ingredients: [
     'Chicken thighs',
     '15 oz canned pineapple',
