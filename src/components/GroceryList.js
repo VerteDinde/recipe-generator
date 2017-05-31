@@ -3,9 +3,6 @@ import GroceryItem from './GroceryItem';
 import { ListGroup } from 'react-bootstrap';
 
 export default class GroceryList extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const { shoppingList } = this.props;

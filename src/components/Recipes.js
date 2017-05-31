@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import Recipe from './Recipe';
 
 export default class Recipes extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+  
   render() {
     const { recipes } = this.props;
     return (
