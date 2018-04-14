@@ -14,6 +14,7 @@ export default class App extends Component {
       shoppingList: []
     };
 
+		// TODO: Change to arrow function so bind isn't necessary
     this.addToShoppingList = this.addToShoppingList.bind(this);
   }
 
@@ -23,18 +24,20 @@ export default class App extends Component {
 
   addToShoppingList(recipe) {
     let list = recipe.ingredients.concat(this.state.shoppingList);
-    list = this.uniqueArray(list, "name");
+    list = this.removeDuplicates(list, "name");
     this.setState({ shoppingList: list });
   }
 
-  uniqueArray(list, name) {
+  removeDuplicates(list, name) {
     return list.reduce((prev, item) => {
       let newItem = prev.find(i => {
         return i.name === item.name;
       });
       if (!newItem) {
         prev.push({ name: item.name, amount: item.amount });
-      } else {
+			} else if (item.amount === null) {
+				newItem.amount = null;
+			} else {
         newItem.amount = newItem.amount + item.amount;
       }
       return prev;

@@ -25,11 +25,11 @@ const recipes = [{
     showAmount: false,
     amount: null,
   },{
-    name: 'Cloves of Garlic',
+    name: 'Cloves Garlic',
     showAmount: true,
     amount: 3,
   },{
-    name: 'Cups of Veggie Broth',
+    name: 'Cups Veggie Broth',
     showAmount: true,
     amount: 4,
   },{
@@ -137,7 +137,7 @@ const recipes = [{
     showAmount: true,
     amount: 3,
   },{
-    name: 'Cloves of Garlic',
+    name: 'Cloves Garlic',
     showAmount: true,
     amount: 3,
   },{
@@ -149,19 +149,19 @@ const recipes = [{
     showAmount: true,
     amount: 3,
   },{
-    name: 'Cups of Veggie Broth',
+    name: 'Cups Veggie Broth',
     showAmount: true,
     amount: 8,
   },{
-    name: '14oz can of Diced Tomatoes',
+    name: '14oz can Diced Tomatoes',
     showAmount: true,
     amount: 1,
   },{
-    name: '14oz can of Cannelli Beans',
+    name: '14oz can Cannelli Beans',
     showAmount: true,
     amount: 1,
   },{
-    name: 'Cups of Penne',
+    name: 'Cups Penne',
     showAmount: true,
     amount: 3,
   },{
@@ -185,24 +185,38 @@ const recipes = [{
   recipeID: 'veggie-rice',
   imgUrl: veggieFriedRiceImg,
   ingredients: [{
-    name: 'Cups of Brown Rice',
+    name: 'Cups Brown Rice',
     showAmount: true,
     amount: 4,
   },{
     name: 'Chopped Veggies',
     showAmount: true,
-    amount: 4,
-  }
-    // 'Saffron oil',
-    // '2 cloves garlic',
-    // 'ginger',
-    // 'red pepper flakes',
-    // '6 cups chopped vegetables',
-    // 'sea salt',
-    // '4 cups brown rice',
-    // 'soy sauce',
-    // '2 eggs',
-  ],
+    amount: 6,
+  },{
+    name: 'Saffron Oil',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Cloves Garlic',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Eggs',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Red Pepper Flakes',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Ginger',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Soy Sauce',
+    showAmount: true,
+    amount: 2,
+  }],
   description: 'null',
   quantity: 1
 },
@@ -211,21 +225,30 @@ const recipes = [{
   recipeID: 'sweet-sour-chicken',
   imgUrl: sweetSourImg,
   ingredients: [{
-    name: 'lb of Chicken Thighs',
+    name: 'lb Chicken Thighs',
     showAmount: true,
     amount: 1,
   },{
     name: 'Yellow Onion',
     showAmount: true,
     amount: 1,
-  }
-    // 'Chicken thighs',
-    // '15 oz canned pineapple',
-    // '2 green bell peppers',
-    // '1 yellow onion',
-    // 'green onions',
-    // 'Sweet/sour sauce',
-  ],
+  },{
+    name: '15 oz canned pineapple',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Green Bell Peppers',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Green Onion',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Sweet & Sour Sauce',
+    showAmount: false,
+    amount: null,
+  }],
   description: 'null',
   quantity: 1,
 },
@@ -242,7 +265,7 @@ const recipes = [{
     showAmount: true,
     amount: 1,
   },{
-    name: 'Cloves of Garlic',
+    name: 'Cloves Garlic',
     showAmount: true,
     amount: 2,
   },{
