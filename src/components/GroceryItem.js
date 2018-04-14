@@ -5,7 +5,7 @@ export default function GroceryItem({ ingredient }) {
   return (
     <ListGroupItem className="grocery-item">
       <input type="checkbox"></input>
-      {ingredient}
+      {ingredient.amount} {ingredient.name}
     </ListGroupItem>
   );
 }

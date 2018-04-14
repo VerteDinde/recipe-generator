@@ -24,7 +24,25 @@ export default class App extends Component {
 
   addToShoppingList(recipe) {
     let list = recipe.ingredients.concat(this.state.shoppingList);
+    console.log('List: ', list);
+    list = this.uniqueArray(list, "name");
     this.setState({ shoppingList: list });
+  }
+
+  uniqueArray(list, name) {
+    let obj = {};
+    console.log('List: ', list);
+    console.log('Name: ', name);
+
+    return Object.keys(list.reduce((prev, next) => {
+      console.log('Inside: ', obj[next[name]]);
+      if(!obj[next[name]]) {obj[next[name]] = next;}
+      return obj;
+    }, obj))
+    .map((i) => {
+      console.log('Object: ', obj[i]);
+      return obj[i];
+    });
   }
 
   render() {

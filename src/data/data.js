@@ -8,19 +8,51 @@ const recipes = [{
   name: 'Broccoli Chevre Soup',
   recipeID: 'broccoli-soup',
   imgUrl: broccoliChevreImg,
-  ingredients: [
-    'unsalted butter',
-    'yellow onion',
-    '2 carrots',
-    'sea salt',
-    '3 cloves garlic',
-    '4 cups veggie broth',
-    '2 heads broccoli',
-    '1 bay leaf',
-    'black pepper',
-    'tahini',
-    '4 oz chevre'
-  ],
+  ingredients: [{
+    name: 'Unsalted Butter',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Carrots',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Yellow Onion',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Sea Salt',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Cloves of Garlic',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Cups of Veggie Broth',
+    showAmount: true,
+    amount: 4,
+  },{
+    name: 'Broccoli (large heads)',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Bay Leaf',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Black Pepper',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Tbsp Tahini',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'oz Chevre',
+    showAmount: true,
+    amount: 4,
+  }],
   description: 'null',
   quantity: 1
 },
@@ -28,22 +60,63 @@ const recipes = [{
   name: 'Superhero Muffins',
   recipeID: 'superhero-muffins',
   imgUrl: superheroMuffinImg,
-  ingredients: [
-    'almond meal',
-    'rolled oats',
-    'cinnamon',
-    'nutmeg',
-    'baking soda',
-    'sea salt',
-    'walnuts',
-    'chocolate chips',
-    '3 eggs',
-    '1 zucchini',
-    '2 carrots',
-    'unsalted butter',
-    'maple syrup',
-    'vanilla extract'
-  ],
+  ingredients: [{
+    name: 'Unsalted Butter',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Cups Almond Meal',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Cup Rolled Oats',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Cinnamon',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Nutmeg',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Tbsp Baking Soda',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Sea Salt',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Cup Walnuts',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Cup Chocolate Chips',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Vanilla Extract',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Eggs',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Zucchini',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Carrots',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'Maple Syrup',
+    showAmount: false,
+    amount: null,
+  }],
   description: 'null',
   quantity: 1
 },
@@ -51,21 +124,59 @@ const recipes = [{
   name: 'Sausage Minestrone',
   recipeID: 'sausage-minestrone',
   imgUrl: sausageMinestroneImg,
-  ingredients: [
-    '1 lb spicy Italian sausage',
-    '3 ribs celery',
-    '3 carrots',
-    '1 yellow onion',
-    '3 cloves garlic',
-    'oregano',
-    'sea salt',
-    '8 cups veggie broth',
-    '3 zucchini',
-    '14 oz diced tomatoes',
-    '14 oz cannelli beans',
-    '3 cups penne',
-    'Parmesan'
-  ],
+  ingredients: [{
+    name: 'lb Spicy Italian Sausage',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Celery Ribs',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Carrots',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Cloves of Garlic',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Yellow Onion',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Zucchini',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Cups of Veggie Broth',
+    showAmount: true,
+    amount: 8,
+  },{
+    name: '14oz can of Diced Tomatoes',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: '14oz can of Cannelli Beans',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Cups of Penne',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Oregano',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Sea Salt',
+    showAmount: false,
+    amount: null,
+  },{
+    name: 'Parmesan',
+    showAmount: false,
+    amount: null,
+  }],
   description: 'null',
   quantity: 1
 },
@@ -73,16 +184,24 @@ const recipes = [{
   name: 'Veggie Fried Rice',
   recipeID: 'veggie-rice',
   imgUrl: veggieFriedRiceImg,
-  ingredients: [
-    'Saffron oil',
-    '2 cloves garlic',
-    'ginger',
-    'red pepper flakes',
-    '6 cups chopped vegetables',
-    'sea salt',
-    '4 cups brown rice',
-    'soy sauce',
-    '2 eggs',
+  ingredients: [{
+    name: 'Cups of Brown Rice',
+    showAmount: true,
+    amount: 4,
+  },{
+    name: 'Chopped Veggies',
+    showAmount: true,
+    amount: 4,
+  }
+    // 'Saffron oil',
+    // '2 cloves garlic',
+    // 'ginger',
+    // 'red pepper flakes',
+    // '6 cups chopped vegetables',
+    // 'sea salt',
+    // '4 cups brown rice',
+    // 'soy sauce',
+    // '2 eggs',
   ],
   description: 'null',
   quantity: 1
@@ -91,13 +210,21 @@ const recipes = [{
   name: 'Sweet and Sour Chicken',
   recipeID: 'sweet-sour-chicken',
   imgUrl: sweetSourImg,
-  ingredients: [
-    'Chicken thighs',
-    '15 oz canned pineapple',
-    '2 green bell peppers',
-    '1 yellow onion',
-    'green onions',
-    'Sweet/sour sauce',
+  ingredients: [{
+    name: 'lb of Chicken Thighs',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Yellow Onion',
+    showAmount: true,
+    amount: 1,
+  }
+    // 'Chicken thighs',
+    // '15 oz canned pineapple',
+    // '2 green bell peppers',
+    // '1 yellow onion',
+    // 'green onions',
+    // 'Sweet/sour sauce',
   ],
   description: 'null',
   quantity: 1,
@@ -106,16 +233,32 @@ const recipes = [{
   name: 'Creamy Italian Sausage Soup',
   recipeID: 'creamy-sausage-soup',
   imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
-  ingredients: [
-    'mild Italian sausage',
-    'red pepper flakes',
-    'thick cut bacon',
-    '1 large onion',
-    '2 cloves garlic',
-    'chicken broth',
-    'potatoes (Yukon golds)',
-    'heavy cream',
-    'fresh kale'
+  ingredients: [{
+    name: 'lb Spicy Italian Sausage',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'Yellow Onion',
+    showAmount: true,
+    amount: 1,
+  },{
+    name: 'Cloves of Garlic',
+    showAmount: true,
+    amount: 2,
+  },{
+    name: 'lb Yukon Gold Potatoes',
+    showAmount: true,
+    amount: 1,
+  }
+    // 'mild Italian sausage',
+    // 'red pepper flakes',
+    // 'thick cut bacon',
+    // '1 large onion',
+    // '2 cloves garlic',
+    // 'chicken broth',
+    // 'potatoes (Yukon golds)',
+    // 'heavy cream',
+    // 'fresh kale'
   ],
   description: 'null',
   quantity: 1,
