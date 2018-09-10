@@ -285,6 +285,54 @@ const recipes = [{
   ],
   description: 'null',
   quantity: 1,
+},
+{
+  name: 'Kale Quinoa Salad',
+  recipeID: 'kale-quinoa-salad',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  ingredients: [{
+    name: 'lb Spicy Italian Sausage',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'lb Yukon Gold Potatoes',
+    showAmount: true,
+    amount: 1,
+  }],
+  description: 'null',
+  quantity: 1,
+},
+{
+  name: 'Pumpkin Spice Muffins',
+  recipeID: 'kale-quinoa-salad',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  ingredients: [{
+    name: 'lb Spicy Italian Sausage',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'lb Yukon Gold Potatoes',
+    showAmount: true,
+    amount: 1,
+  }],
+  description: 'null',
+  quantity: 1,
+},
+{
+  name: 'Bacon-Wrapped Chicken',
+  recipeID: 'kale-quinoa-salad',
+  imgUrl: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/pomeranian-puppies/pomeranian-puppy-1.jpg',
+  ingredients: [{
+    name: 'lb Spicy Italian Sausage',
+    showAmount: true,
+    amount: 3,
+  },{
+    name: 'lb Yukon Gold Potatoes',
+    showAmount: true,
+    amount: 1,
+  }],
+  description: 'null',
+  quantity: 1,
 }];
 
 export default {
